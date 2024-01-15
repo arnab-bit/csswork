@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first {
+            background-color: #ff8989;
+        }
+        #second {
+            background-color: #88f7ce;
+        }
+        #third {
+            background-color: #e29df2;
+        }
+        /* ------- Desktop first view ------- */
+
+        /* div {
+            width: 32%;
+            height: 300px;
+            margin: 0.4%;
+            display: inline-block;
+        }
+        @media screen and (max-width: 600px) {
+            div {
+                display: block;
+                width: 100%;
+            }
+        } */
+
+        /* ------- Mobile first view ------- */
+
+        div {
+            width: 100%;
+            height: 300px;
+            margin: 0.4%;
+            display: block;
+        }
+        @media screen and (min-width: 601px) {
+            div {
+                display: inline-block;
+                width: 32%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="first"></div>
+    <div id="second"></div>
+    <div id="third"></div>
+</body>
+</html>

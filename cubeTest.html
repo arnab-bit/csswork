@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotate {
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+            20% {
+                transform: rotateY(90deg) rotateZ(90deg);
+            }
+            40% {
+                transform: rotateY(180deg) rotateZ(-90deg);
+            }
+            60% {
+                transform: rotateY(270deg) rotateZ(90deg);
+            }
+            80% {
+                transform: rotateY(360deg) rotateZ(-90deg);
+            }
+        }
+        .cube {
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 100px;
+            transform-style: preserve-3d;
+            /* perspective: 4000px; */
+            transform: rotateX(25deg) rotateY(-25deg);
+            animation: rotate 10s linear infinite;
+        }
+        .face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            opacity: 0.9;
+        }
+        .one {
+            background-color: skyblue;
+        }
+        .two {
+            background-color: lightgreen;
+            transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+        }
+        .three {
+            background-color: red;
+            transform: rotateX(90deg) translateZ(100px) translateY(100px);
+        }
+        .four {
+            background-color: lightcoral;
+            transform: rotateX(90deg) translateZ(-100px) translateY(100px);
+        }   
+        .five {
+            background-color: lightslategray;
+            transform: rotateY(90deg) translateX(-100px) translateZ(100px);
+        }
+        .six {
+            background-color: yellowgreen;
+            transform: translateZ(200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="face one"></div>
+        <div class="face two"></div>
+        <div class="face three"></div>
+        <div class="face four"></div>
+        <div class="face five"></div>
+        <div class="face six"></div>
+    </div>
+</body>
+</html>

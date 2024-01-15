@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <style>
+      #box {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        border: 1px solid black;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      #box div {
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        /* width: 500px;
+        flex-basis: 250px;
+        min-width: 750px; */
+      }
+      
+      .box1 {
+        background-color: #8ffcc9;
+      }
+      .box-2 {
+        background-color: #d0a5ff;
+      }
+      .box-3 {
+        background-color: #f5ff8e;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="box">
+        <div class="box1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+      </div>
+  </body>
+</html>

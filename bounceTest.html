@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bounceBox {
+            0%  {
+                /* top: 100px; */
+                transform: translateY(0px);
+            }
+            100% {
+                /* top: 0px; */
+                transform: translateY(-100px);
+            }
+        }
+        #div1 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        background-color: aqua;
+        /* animation: bounceBox 0.9s 10 alternate; */
+        }
+        #div1:hover {
+            animation: bounceBox 0.9s 10 alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
